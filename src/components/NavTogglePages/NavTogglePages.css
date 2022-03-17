@@ -1,0 +1,6 @@
+
+@media (max-width: 1200px) {
+    .nav__toggle {
+        transform: translateX(-160px);
+    }
+}

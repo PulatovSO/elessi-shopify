@@ -1,0 +1,126 @@
+
+.categories__showcase {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/images/organic.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.categories__header {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #333;
+}
+
+.grid {
+    padding: 10px 0;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.grid__btn {
+    padding: 0 5px;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
+.grid__btn:hover .block {
+    background: #eee;
+}
+
+.active-block {
+    background: #000 !important;
+}
+
+.product {
+    margin-bottom: 50px;
+}
+
+.product__inner {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.product__image {
+    width: 100%;
+}
+
+.product__image-hover {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.product__title {
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.product__price {
+    font-size: 18px;
+    color: #333;
+}
+
+.product__btn {
+    position: absolute;
+    right: -12px;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    color: #fff;
+    background: #000;
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.product__like {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 22px;
+    border: none;
+    background: none;
+    color: #555;
+}
+
+.product__view {
+    top: 60px;
+}
+
+.product__add {
+    bottom: 50px;
+}
+ 
+.product__inner:hover .product__image-hover {
+    opacity: 1;
+}
+
+.product__inner:hover .product__btn {
+    transform: translateX(-25px);
+    opacity: 1;
+}
+
+.product__inner:hover .product__add {
+    transform: translateX(-25px);
+    transition-delay: 100ms;
+    opacity: 1;
+}

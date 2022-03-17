@@ -1,0 +1,47 @@
+
+.table__inner {
+    width: 100%;
+    background: #fff;
+}
+
+.table__header {
+    margin: 30px 0;
+    font-weight: 800;
+    font-size: 23px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.table__header::after {
+    content: '';
+    display: flex;
+    position: relative;
+    top: 2px;
+    width: 30px;
+    height: 2px;
+    background-color: #0000001a;
+}
+
+.item {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.item__image {
+    width: 70px;
+}
+
+.item__info {
+    margin-left: 15px;
+}
+
+.item__name,
+.item__price {
+    font-size: 16px;
+    color: #111;
+    text-transform: capitalize;
+}
+
+.item__price {
+    color: #333;
+}

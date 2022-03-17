@@ -1,0 +1,12 @@
+
+
+.best__top {
+    display: grid;
+    place-items: center;
+}
+
+.best__header {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1b1919;
+}

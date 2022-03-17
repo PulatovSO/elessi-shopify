@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 20px;
+}
+
+
+@media (max-width: 1023px) {
+    .container {
+        padding: 0;
+        width: 96%;
+    }
+}
+
+
+/* scroll */
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

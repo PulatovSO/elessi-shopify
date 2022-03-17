@@ -1,0 +1,51 @@
+
+.wishlist__header {
+    margin: 70px 0;
+    font-size: 47px;
+    font-weight: 800;
+    color: #333;
+    text-align: center;
+}
+
+.wishtable {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+
+.wishtable__row {
+    border-bottom: 2px solid red;
+}
+
+.wishtable__list {
+    padding: 0 100px;
+    border-bottom: 2px solid #dddddda8;
+}
+
+.wishtable__header {
+    padding: 30px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1B1919;
+}
+
+.wishtable__empty {
+    margin-bottom: 100px;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+@media (max-width: 768px) {
+    .wishtable__list {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+.header__top {
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.header-top__inner,
+.header-top__inner-wrap,
+.header-top__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__icon {
+    margin-right: 10px;
+}
+
+.header-top__info {
+    font-size: 13px;
+    letter-spacing: .3px;
+}
+
+
+/* responsive ===================== */
+
+@media (max-width: 736px) {
+    .top__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__lang {
+        display: none;
+    } 
+}

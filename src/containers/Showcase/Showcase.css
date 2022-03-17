@@ -1,0 +1,128 @@
+
+.showcase {
+    width: 100vw;
+}
+
+.showcase__store {
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 800;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.showcase__title {
+    margin: 30px 0;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 800;
+    color: #333;
+    padding: 8px 0;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.showcase__btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    border-radius: 0;
+    border: 1px solid;
+    transition: all .25s ease-in-out;
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #ccc;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.light {
+    color: #fff;
+}
+
+.dark-btn {
+    background-color: #444;
+    color: #fff;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.page-one {
+    background-image: url(../../assets/images/showcase1.webp);
+}
+.page-two {
+    background-image: url(../../assets/images/showcase2.webp);
+}
+.page-three {
+    background-image: url(../../assets/images/showcase3.webp);
+}
+
+
+/* animation */
+@keyframes fade-in-right {
+    0% {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* responsiveness */
+@media (max-width: 1035px) {
+    .page {
+        height: 550px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        height: 400px;
+    }
+}
+
+@media (max-width: 736px) {
+    .showcase__store {
+        font-size: 7px;
+        letter-spacing: 3px;
+    }
+
+    .showcase__title {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .showcase__btn {
+        font-size: 10px;
+        padding: 4px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        height: 300px;
+    }
+}

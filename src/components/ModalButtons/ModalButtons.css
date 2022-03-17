@@ -1,0 +1,90 @@
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons__inner {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons__count {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.buttons__count p {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px;
+    box-shadow: none;
+    color: #848484;
+    background-color: #f9f9f9;
+    border-right: 1px solid #e0e0e0;
+    font-weight: 700;
+}
+
+.buttons__btn {
+    padding: 13px 0;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #848484;
+    background-color: #f9f9f9;
+    border: none;
+    border-right: 1px solid #e0e0e0;
+}
+
+.buttons__add {
+    padding: 18px 85px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background: #6bad0d;
+    border: none;
+}
+
+.buttons__add:hover {
+    background: #656565;
+}
+
+.buttons__or {
+    margin: 10px 0;
+    font-weight: 600;
+    color: #555;
+}
+
+.buttons__or::before,
+.buttons__or::after {
+    content: '';
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    width: 17px;
+    height: 1px;
+    background: #555;
+}
+
+.buttons__buy {
+    padding: 17px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background: #000;
+    border: none;
+}
+
+.buttons__buy:hover {
+    background: #656565;
+}

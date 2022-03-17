@@ -1,0 +1,25 @@
+
+.counter {
+    margin-top: 20px;
+    display: flex;
+}
+
+.counter__block {
+    margin-right: 5px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    background: #95bf47;
+}
+
+.counter__block span {
+    /* position: absolute;
+    bottom: 5px; */
+    font-size: 12px;
+    text-transform: uppercase;
+}

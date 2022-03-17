@@ -1,0 +1,27 @@
+
+.modal-body {
+    margin-top: 20px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.modal-body__paragraph {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.red-span {
+    color: #dd1e31;
+}
+
+.green-span {
+    color: #6bad0d;
+}
+
+.modal-body__image {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #E6E6E6;
+}
