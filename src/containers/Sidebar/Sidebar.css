@@ -10,6 +10,9 @@
 }
 
 .sidebar {
+    padding: 0 40px;
+    padding-bottom: 40px;
+    padding-right: 20px;
     position: fixed;
     top: 0;
     width: 415px;
@@ -48,9 +51,226 @@
     border: none;
 }
 
+/* sidebar body ================*/
 .sidebar__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
 }
+
+.sidebar__products {
+    flex-basis: 60%;
+    border-bottom: 1px solid #ebe5dc;
+    overflow-y: scroll;
+}
+
+.cart-item {
+    margin: 36px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.cart-item__image {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.cart-item__name {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.cart-item__weight,
+.cart-item__price {
+    font-size: 14px;
+    color: #555;
+}
+
+.cart-item__buttons {
+    position: absolute;
+    top: -18px;
+    right: 40px;
+}
+
+.count {
+    display: flex;
+    box-shadow: 0 0 3px 0 #e0e0e0;
+}
+
+.count span {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #555;
+    border: 1px solid #e0e0e0;
+}
+
+.count__btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.count button {
+    width: 20px;
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+    min-width: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.cart-item__remove {
+    border: none;
+    color: #6bad0d;
+    background: none;
+    border-bottom: 1px solid #6bad0d;
+}
+
+.sidebar__instruction {
+    font-size: 16px;
+    line-height: 1.71429;
+    display: inline-block;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.sidebar__textarea {
+    width: 90%;
+    padding: 10px;
+    border-color: #ddd;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+.sidebar__textarea:focus {
+    border-color: #000;
+}
+
+/* sidebar desc ================== */
+.desc {
+    padding: 40px 0;
+    padding-right: 30px;
+    height: 350px;
+}
+
+.desc__price-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc__subtotal{
+    font-weight: 700;
+    font-size: 22px;
+    color: #555;
+}
+
+.desc__price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #6bad0d;
+}
+
+.desc__free {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.desc__free-wrap {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 11px;
+    color: #fff;
+    background: #e7ba3d;
+}
+
+.desc__free-text {
+    position: relative;
+    z-index: 100;
+}
+
+.desc__free-percentage {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: #6bad0d;
+}
+
+.desc__free-icon {
+    position: relative;
+    width: 45px;
+    height: 40px;
+    color: #fff;
+    background: #e7ba3d;
+    border-radius: 50%;
+    transform: translateX(-10px);
+}
+
+.desc__free-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.desc__checkbox {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.desc__label {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #1b1919;
+    font-weight: 400;
+}
+
+.desc__buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc__btn {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #6bad0d;
+    border: none;
+    transition: all 0.2s ease-in-out ;
+}
+
+.view-btn:hover {
+    opacity: 0.8;
+}
+
+.check-btn:hover {
+    background: #f76b6a;    
+}
+
+/* sidebar empty =================*/
 
 .empty {
     width: 100%;
@@ -68,6 +288,7 @@
 .empty__bottom {
     width: 100%;
     position: absolute;
+    left: 0;
     bottom: 0;
     padding: 21px;
     font-size: 16px;

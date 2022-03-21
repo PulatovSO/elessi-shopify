@@ -4,8 +4,13 @@ import logo from '../../assets/images/logo.webp';
 import { Link } from 'react-router-dom';
 import Sidebar from '../../containers/Sidebar/Sidebar';
 import Menubar from '../../containers/Menubar/Menubar';
+import LikeContext from '../../context/LikeContext';
+import CartContext from '../../context/CartContext';
+import { useContext } from 'react';
 
 const Headermiddle = () => {
+    const {liked, updateLiked} = useContext(LikeContext);
+    const {cart, setCart} = useContext(CartContext);
     const [drag, setDrag] = useState(100);
     const [menuDrag, setMenuDrag] = useState(100);
 
@@ -61,11 +66,11 @@ const Headermiddle = () => {
                         </Link>
                         <Link className='header__link wishlist' to='/wishlist'>
                             <i className='header__link-icon bx bx-heart'></i>
-                            <span className="badge">0</span>
+                            <span className="badge">{liked.length}</span>
                         </Link>
                         <a href='#' onClick={() => setDrag(0)} className='header__link'>
                             <i className='header__link-icon bx bxs-shopping-bag-alt'></i>
-                            <span className="badge">0</span>
+                            <span className="badge">{cart.length}</span>
                         </a>
                     </div>
                 </div>

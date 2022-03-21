@@ -12,14 +12,9 @@
     width: 100%;
 }
 
-
-.wishtable__row {
-    border-bottom: 2px solid red;
-}
-
 .wishtable__list {
     padding: 0 100px;
-    border-bottom: 2px solid #dddddda8;
+    border-bottom: 2px solid rgba(221, 221, 221, 0.659);
 }
 
 .wishtable__header {
@@ -44,8 +39,160 @@
 }
 
 
+/* liked item ========================= */
+.wishlist__body {
+    margin-bottom: 100px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table__description {
+    padding-top: 20px;
+    position: relative;
+}
+
+.table__remove {
+    background: none;
+    border: none;
+}
+
+.table__remove i {
+    font-size: 40px;
+}
+
+.table__image {
+    width: 80px;
+}
+
+.table__title {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #424242;
+}
+
+.table__price {
+    font-size: 16px;
+    color: #000;
+}
+
+.table__status {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    color: #297e29;
+    border: 2px solid #297e29;
+}
+
+.table__price,
+.table__status {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.table__btn {
+    padding: 12px 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #fff;
+    background: #2d2d2d;
+    border: 1px solid #2d2d2d;
+}
+
+.table__btn:hover {
+    opacity: 0.8;
+}
+
+.displayNone {
+    display: none;
+}
+
+/* liked column */
+
+.wishtable__column {
+    display: none;
+    flex-direction: column;
+}
+
+.liked {
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+}
+
+.liked__remove {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    opacity: 0.8;
+}
+
+.liked__image-wrap {
+    display: grid;
+    place-items: center;
+}
+
+.liked__image {
+    width: 100px;
+}
+
+.liked__title {
+    font-weight: 700;
+    float: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+}
+
+.liked__name {
+    text-transform: capitalize;
+}
+
+.liked__item {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liked__status {
+    position: static;
+    transform: translate(0);
+}
+
+.liked__btn-wrap {
+    display: grid;
+    place-items: center;
+}
+
+.liked__btn {
+    width: 170px;
+}
+
+/* responsiveness */
 @media (max-width: 768px) {
     .wishtable__list {
         display: none;
+    }
+
+    .table {
+        display: none;
+    }
+
+    .wishtable__column {
+        display: flex;
     }
 }

@@ -167,7 +167,7 @@ const Navtoggleshop = () => {
                     </div>
                 </div>
                 <div className="toggle__item">
-                    <i class='toggle__icon bx bx-loader-circle'></i>
+                    <i className='toggle__icon bx bx-loader-circle'></i>
                     <div className="toggle__inner">
                         <h3 className="toggle__header">awesome support</h3>
                         <p className="toggle__paragraph">Lorem ipsum dolor elit</p>

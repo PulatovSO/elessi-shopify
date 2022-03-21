@@ -88,3 +88,18 @@
 .buttons__buy:hover {
     background: #656565;
 }
+
+.buttons__wrap {
+    display: flex;
+    position: relative;
+}
+
+.alert {
+    margin-left: 10px;
+    padding: 10px;
+    position: absolute;
+    right: -50px;
+    font-size: 22px;
+    color: #6bad0d;
+    border: 2px solid #6bad0d;
+}

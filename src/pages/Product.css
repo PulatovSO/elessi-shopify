@@ -1,0 +1,43 @@
+.product-info {
+    padding-top: 100px;
+    /* background: #a7a7a7; */
+}
+
+.product-info__img {
+    display: flex;
+}
+
+.product-info__image {
+    width: 75%;
+}
+
+.product-info__slide {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info__slide-btn {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.product-info__slide img {
+    width: 100%;
+}
+
+.share {
+    margin: 20px 0;
+    margin-left: 0;
+}
+
+.share-title {
+    margin-right: 100px;
+}
+
+.product-info__social {
+    color: #555;
+}

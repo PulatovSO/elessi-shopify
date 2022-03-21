@@ -4,17 +4,24 @@ import Account from "./pages/Account";
 import Wishlist from "./pages/Wishlist";
 import Collections from "./pages/Collections";
 import Product from "./pages/Product";
+import { LikeProvider } from "./context/LikeContext";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/collections" element={<Collections />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/product" element={<Product />} />
-      </Routes>
+      <LikeProvider>
+        <CartProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/collections" element={<Collections />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/product/:id" element={<Product />} />
+          </Routes>
+        </CartProvider>
+      </LikeProvider>
     </div>
   );
 }

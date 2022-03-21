@@ -34,4 +34,9 @@ td {
 .modal__social {
     margin: 0 5px;
     font-size: 22px;
+    transition: all 0.1s ease-in-out;
+}
+
+.modal__social:hover {
+    color: #95bf47;
 }
